@@ -6,7 +6,7 @@
     <title>Sego Ndog Ubaya | Rasa Premium Harga Pas Mahasiswa Surabaya</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link class="icon" rel="icon" type="image/png" href="assets/logo.png">
     <link rel="apple-touch-icon" href="assets/logo.png">
 
     <!-- Meta Tags for SEO -->
@@ -329,6 +329,13 @@
             70% { box-shadow: 0 0 0 10px rgba(255, 107, 0, 0); }
             100% { box-shadow: 0 0 0 0 rgba(255, 107, 0, 0); }
         }
+
+        /* Carousel Dot active states */
+        .carousel-dot.active-dot {
+            background-color: #FFFFFF !important;
+            width: 16px !important;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body class="font-sans antialiased text-brand-dark selection:bg-brand-orange selection:text-white overflow-x-hidden">
@@ -390,7 +397,6 @@
             <!-- Navigation Links (Apple Style Simple) -->
             <div class="hidden md:flex items-center space-x-8 text-xs font-bold tracking-wider uppercase text-gray-500">
                 <a href="#hero" class="hover:text-brand-dark transition-colors">Beranda</a>
-                <a href="#tiktok-live" class="hover:text-brand-dark transition-colors">Tiktok Live</a>
                 <a href="#bulk-order" class="hover:text-brand-dark transition-colors">Bulk Order</a>
                 <a href="#best-sellers" class="hover:text-brand-dark transition-colors">Unggulan</a>
                 <a href="#menu" class="hover:text-brand-dark transition-colors">Menu</a>
@@ -439,6 +445,88 @@
                 <a href="#lokasi" class="w-full sm:w-auto bg-white hover:bg-brand-zinc text-brand-dark px-10 py-5 rounded-full text-sm font-bold tracking-wide uppercase transition-all border border-black/5 flex items-center justify-center gap-1.5 shadow-sm">
                     <i class="fa-solid fa-map-location-dot text-brand-orange"></i> Rute Outlet
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT US / CREW CAROUSEL ==================== -->
+    <section id="about-us" class="py-20 bg-white border-t border-black/[0.03]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12 max-w-5xl mx-auto">
+                
+                <!-- Left Column: Copywriting -->
+                <div class="lg:w-1/2 reveal">
+                    <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-brand-zinc border border-black/5 mb-4">
+                        <span class="text-[10px] font-bold text-gray-500 uppercase tracking-widest font-outfit">Kenalan Yuk! 👋</span>
+                    </div>
+                    <h2 class="text-3xl lg:text-5xl font-black tracking-tight text-brand-dark mb-6 leading-tight font-outfit">
+                        Yuk kenalan dengan <span class="text-brand-orange">Mbak Ndog</span> dan outlet <span class="text-brand-orange">Sego Ndog Ubaya!</span>
+                    </h2>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6 font-light">
+                        No cap, di balik sepiring sego ndog pelopor sambal bawang legendaris yang bikin nagih di Surabaya, ada Mbak Ndog dan kru super asyik yang siap menyambut kamu setiap hari.
+                    </p>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-8 font-light">
+                        Mulai dari sarapan pagi sehabis absen kelas nugas, kumpul panitia kampus, sampai makan malam kelar nongkrong nugas larut malam, kami berkomitmen menyajikan hidangan berkualitas yang higienis, hangat, dan pas di kantong!
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#menu" class="bg-brand-dark text-white px-6 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-gray-800 transition-colors shadow-sm">
+                            Lihat Menu Kita
+                        </a>
+                        <a href="#lokasi" class="bg-brand-zinc text-brand-dark hover:bg-black/5 px-6 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider transition-colors border border-black/[0.04]">
+                            Kunjungi Outlet
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Slide Carousel -->
+                <div class="lg:w-1/2 w-full reveal">
+                    <div class="relative rounded-[2.5rem] overflow-hidden border border-black/5 shadow-2xl bg-[#F5F5F7] aspect-[3/4] md:h-[500px] group">
+                        
+                        <!-- Slide container wrapper -->
+                        <div id="carousel-slides" class="flex w-full h-full transition-transform duration-700 ease-in-out">
+                            <!-- Slide 1 -->
+                            <div class="w-full h-full flex-shrink-0 relative">
+                                <img src="assets/outlet_1.jpg" alt="Mbak Ndog & Crew Sego Ndog Ubaya" class="w-full h-full object-cover">
+                                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-6 text-white text-left">
+                                    <h4 class="font-extrabold text-sm font-outfit">Sego Ndog Crew! 💛</h4>
+                                    <p class="text-[10px] text-gray-200 mt-1">Siap melayani pesanan sarapan pagi sampai makan malam kamu dengan senyuman.</p>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="w-full h-full flex-shrink-0 relative">
+                                <img src="assets/outlet_2.jpg" alt="Ulang Tahun Sego Ndog Ubaya" class="w-full h-full object-cover">
+                                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-6 text-white text-left">
+                                    <h4 class="font-extrabold text-sm font-outfit">Rayakan Momen Seru 🎂</h4>
+                                    <p class="text-[10px] text-gray-200 mt-1">Keluarga besar Sego Ndog Ubaya saat merayakan anniversary outlet bersama-sama.</p>
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="w-full h-full flex-shrink-0 relative">
+                                <img src="assets/outlet_3.jpg" alt="Keceriaan di Outlet" class="w-full h-full object-cover">
+                                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-6 text-white text-left">
+                                    <h4 class="font-extrabold text-sm font-outfit">Rasa Juara, Harga Mahasiswa 🏆</h4>
+                                    <p class="text-[10px] text-gray-200 mt-1">Kami ada karena dukungan hangat dan setia dari seluruh pelanggan setia Surabaya.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Next/Prev Buttons (only show arrows on hover) -->
+                        <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 backdrop-blur-md border border-white/20 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:bg-white/40">
+                            <i class="fa-solid fa-chevron-left text-sm"></i>
+                        </button>
+                        <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 backdrop-blur-md border border-white/20 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:bg-white/40">
+                            <i class="fa-solid fa-chevron-right text-sm"></i>
+                        </button>
+
+                        <!-- Indicator Dots -->
+                        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+                            <button onclick="setSlide(0)" class="carousel-dot w-2 h-2 rounded-full bg-white/50 transition-all active-dot"></button>
+                            <button onclick="setSlide(1)" class="carousel-dot w-2 h-2 rounded-full bg-white/50 transition-all"></button>
+                            <button onclick="setSlide(2)" class="carousel-dot w-2 h-2 rounded-full bg-white/50 transition-all"></button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -500,7 +588,7 @@
                         </div>
 
                         <!-- CTA Button -->
-                        <a id="tiktok-cta-btn" href="https://tiktok.com/@segondog.ubaya" target="_blank" class="inline-flex items-center gap-2 bg-brand-dark text-white px-8 py-4 rounded-full text-xs font-bold tracking-wide uppercase hover:bg-gray-800 shadow-md transition-all">
+                        <a id="tiktok-cta-btn" href="https://tiktok.com/@segondog.ubaya" target="_blank" class="inline-flex items-center gap-2 bg-brand-dark text-white px-8 py-4 rounded-full text-xs font-bold tracking-wide uppercase shadow-md transition-all">
                             <!-- Text populated by JS -->
                         </a>
                     </div>
@@ -553,7 +641,7 @@
                                <i class="fa-solid fa-box-archive"></i>
                            </div>
                            <h3 class="text-xl font-bold text-brand-dark mb-2 font-outfit">Paket Katering Box Sego Ndog</h3>
-                           <p class="text-xs text-gray-500 leading-relaxed mb-6">Kami menyediakan kemasan box yang kokoh dan steril lengkap dengan sendok tisu. Sangat cocok disajikan langsung di acara formal maupun santai.</p>
+                           <p class="text-xs text-gray-500 leading-relaxed mb-6">Kami menyediakan kemasan box yang kokoh and steril lengkap dengan sendok tisu. Sangat cocok disajikan langsung di acara formal maupun santai.</p>
                        </div>
                        
                        <div class="border-t border-black/[0.04] pt-6 flex flex-col gap-3 mb-6">
@@ -823,7 +911,7 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-brand-dark text-xs">Wi-Fi 20 Mbps</h4>
-                                <p class="text-[10px] text-gray-400">Kecepatan tinggi & gratis</p>
+                                <p class="text-[10px] text-gray-400">Koneksi stabil & gratis</p>
                             </div>
                         </div>
 
@@ -937,7 +1025,7 @@
                     </button>
                     <div class="faq-body max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
                         <div class="px-6 pb-6 text-xs md:text-sm text-gray-500 leading-relaxed border-t border-black/[0.02] pt-4">
-                            Ya, Wi-Fi 20 Mbps kecepatan tinggi, colokan listrik di setiap meja, dan area parkir gratis sepenuhnya diperuntukkan bagi semua pengunjung kami yang makan di tempat (dine-in) tanpa biaya tambahan!
+                            Ya, Wi-Fi 20 Mbps, colokan listrik di setiap meja, dan area parkir gratis sepenuhnya diperuntukkan bagi semua pengunjung kami yang makan di tempat (dine-in) tanpa biaya tambahan!
                         </div>
                     </div>
                 </div>
@@ -1112,6 +1200,51 @@
         // UX Limit for mobile scroll: Load More states
         const itemsPerView = 9;
         let showAllMenu = false;
+
+        // About Us Carousel State & Logic
+        let currentSlide = 0;
+        const totalSlides = 3;
+        let carouselInterval;
+
+        function showSlide(index) {
+            const slidesWrapper = document.getElementById("carousel-slides");
+            const dots = document.querySelectorAll(".carousel-dot");
+            if (!slidesWrapper) return;
+
+            currentSlide = (index + totalSlides) % totalSlides;
+            slidesWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+            // Update dots active class styling
+            dots.forEach((dot, i) => {
+                if (i === currentSlide) {
+                    dot.classList.add("active-dot");
+                } else {
+                    dot.classList.remove("active-dot");
+                }
+            });
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function setSlide(index) {
+            showSlide(index);
+            resetCarouselTimer();
+        }
+
+        function startCarouselTimer() {
+            carouselInterval = setInterval(nextSlide, 3000); // auto slide every 3s
+        }
+
+        function resetCarouselTimer() {
+            clearInterval(carouselInterval);
+            startCarouselTimer();
+        }
 
         // 3D Opener Interactive Tilt Logic
         const openerContainer = document.getElementById('opener-container');
@@ -1728,6 +1861,7 @@
             renderBestSellers();
             renderCategoryTabs();
             renderMenuGrid();
+            startCarouselTimer();
             
             // Run TikTok check every second
             setInterval(updateTikTokLiveStatus, 1000);
